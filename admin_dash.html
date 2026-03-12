@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <span>
+           library | <button>logout</button>
+       </span>
+       <hr>
+        <h1>Manage books</h1>
+        <pr> Total Books : 0 | Available : 0 | Borrowed : 0 | Regesterd Users : 0</pr>
+        <hr>
+            <span><input type="text" name="" placeholder="search by title,Author or ID">
+                <select>
+                    <option value="">All category</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Drame">Drama</option>
+                    <option value="antasy">Fantasy</option>
+                    <option value="Historical">Hisorical</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                </select>
+                <select>
+                    <option>status</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+                </select>
+            </span>
+            <p>Showing 0 out of 0 Books</p>
+            <table border="2" cellpadding="3px">
+             <p>Books Available</p>
+                    <th>ID</th>
+                    <th>BOOK TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>CATEGORY</th>
+                    <th>DESCRIPTION</th>
+                    <th>STATUS</th>
+                    <th>ACTION</th>
+                <tfoot>
+                    <td>No Books Found</td>
+                </tfoot>    
+            </table>
+           <span> <p><a href="add_book.html"> Add book</a> <a href="edit_book.html">Edit Book</a></p> </span>
+        
+    </body>
+
+</html>
