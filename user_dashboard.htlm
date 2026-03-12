@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Dashboard</title>
+</head>
+
+<body>
+
+<nav>
+<a href="user_dashboard.html">Dashboard</a> 
+<a href="borrowed_books.html">Borrowed Books</a> 
+<a href="login.html">Logout</a>
+</nav>
+
+<hr>
+
+<h1>User Dashboard</h1>
+
+<h2>Search Books</h2>
+
+<input type="text" id="searchInput" placeholder="title, author, or category">
+
+<select id="filterType">
+<option value="title">Title</option>
+<option value="author">Author</option>
+<option value="category">Category</option>
+</select>
+
+<button onclick="searchBooks()">Search</button>
+
+<hr>
+
+<h2>Books</h2>
+
+<div id="books">
+
+<div class="book">
+<h3 class="title">Clean Code</h3>
+<p class="author">Author: Robert Martin</p>
+<p class="category">Category: Programming</p>
+<p>Status: Available</p>
+<a href="book_detail.html">View Details</a>
+<hr>
+</div>
+
+<div class="book">
+<h3 class="title">Harry Potter</h3>
+<p class="author">Author: J.K Rowling</p>
+<p class="category">Category: Fantasy</p>
+<p>Status: Not Available</p>
+<a href="book_detail.html">View Details</a>
+<hr>
+</div>
+
+<div class="book">
+<h3 class="title">Atomic Habits</h3>
+<p class="author">Author: James Clear</p>
+<p class="category">Category: Self Development</p>
+<p>Status: Available</p>
+<a href="book_detail.html">View Details</a>
+<hr>
+
+</body>
+</html>
