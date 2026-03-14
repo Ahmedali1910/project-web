@@ -6,10 +6,14 @@
 
 <body>
 
-<nav>
-<a href="user_dashboard.html">Dashboard</a> 
-<a href="borrowed_books.html">Borrowed Books</a> 
-<a href="login.html">Logout</a>
+ <nav>
+<button><a href="home_user.html">🏠 Home</a></button>
+<button><a href="user_dashboard.html">📋 Dashboard</a></button> 
+<button><a href="borrowed_books.html">🤝🏻 Borrowed Books</a> </button>
+<p align = "right"><button><a href="login.html" > ➤ Logout</a></button>
+<button><a href="admin.html" > 👨🏻‍💼 Admin </a>
+</button>
+</p>
 </nav>
 
 <hr>
@@ -35,29 +39,32 @@
 <div id="books">
 
 <div class="book">
+    <img src="clean.png" alt="clean" title="clean code">
 <h3 class="title">Clean Code</h3>
 <p class="author">Author: Robert Martin</p>
 <p class="category">Category: Programming</p>
 <p>Status: Available</p>
-<a href="book_detail.html">View Details</a>
+<button><a href="clean.html">👀 View Details</a> <button>🤝🏻 Borrow Book</button> </button>
 <hr>
 </div>
 
 <div class="book">
+    <img src="harry.png" alt="Harry" title="Haryy">
 <h3 class="title">Harry Potter</h3>
 <p class="author">Author: J.K Rowling</p>
 <p class="category">Category: Fantasy</p>
 <p>Status: Not Available</p>
-<a href="book_detail.html">View Details</a>
+<button><a href="harry.html">👀 View Details</a> <button disabled>🤝🏻 Borrow Book</button> </button>
 <hr>
 </div>
 
 <div class="book">
+    <img src="atomic.png" alt="Atomic habits" title="Atomic habits">
 <h3 class="title">Atomic Habits</h3>
 <p class="author">Author: James Clear</p>
 <p class="category">Category: Self Development</p>
 <p>Status: Available</p>
-<a href="book_detail.html">View Details</a>
+<button><a href="atomic.html">👀 View Details</a> <button>🤝🏻 Borrow Book</button> </button>
 <hr>
 
 </body>
