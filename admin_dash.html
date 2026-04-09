@@ -3,58 +3,88 @@
     <head>
      <meta charset="UTF-8"/>
      <title>Admin Dashboard</title>
+      <link rel="stylesheet" href="admin_dash.css">
     </head>
     <body>
 
- <span> <nav>
+ <nav>
     <button><a href="home_admin.html">🏠 Home</a></button> 
     <button><a href="admin_dash.html">📋 Dashboard</a> </button>
     <button><a href="add_book.html">➕ Add book</a> </button>
     <button><a href="edit_book.html">✍️ Edit book</a> </button>
-
+    <button><a href="delete_book.html">🗑️Delete Book</a></button>
     <div align="right"> <button><a href="login.html">👤 user</a></button> 
        <button> <a href="login.html">➤logout</a></button></div>
-    </nav></span>
-<hr>
-        
-       
-        <h1>Manage books</h1>
-        <pr> Total Books : 0 | Available : 0 | Borrowed : 0 | Regesterd Users : 0</pr>
-        <hr>
-            <span><input type="text" name="" placeholder="search by title,Author or ID">
-                <select>
-                    <option value="">All category</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Drame">Drama</option>
-                    <option value="antasy">Fantasy</option>
-                    <option value="Historical">Hisorical</option>
-                    <option value="Horror">Horror</option>
-                    <option value="Sci-Fi">Sci-Fi</option>
+    </nav>
+
+     <div class="admincontainer">
+        <br>
+         
+         <h1 class="shadow">Manage books</h1>
+         <p class="shadow"> Total Books : 0 | Available : 0 | Borrowed : 0 | Regesterd Users : 0</p>
+         <div class="searchcontainer">
+             <input type="text" name="" placeholder="search by title,Author or ID">
+             <select class="categorydropdown">
+                 <option value="">All category</option>
+                 <option value="Romance">Romance</option>
+                 <option value="Drame">Drama</option>
+                 <option value="antasy">Fantasy</option>
+                 <option value="Historical">Hisorical</option>
+                 <option value="Horror">Horror</option>
+                 <option value="Sci-Fi">Sci-Fi</option>
                 </select>
-                <select>
+                <select class="statusdropdown">
                     <option>status</option>
                     <option value="Available">Available</option>
                     <option value="Unavailable">Unavailable</option>
                 </select>
-            </span>
-            <p>Showing 0 out of 0 Books</p>
-            <table border="2" cellpadding="8">
-             <p>Books Available</p>
-                    <th>ID</th>
-                    <th>BOOK TITLE</th>
-                    <th>AUTHOR</th>
-                    <th>CATEGORY</th>
-                    <th>DESCRIPTION</th>
-                    <th>STATUS</th>
-                    <th>ACTION</th>
-                <tfoot>
-                    <td>No Books Found</td>
-                </tfoot>    
-            </table>
-            <br>
-           <span><button><a href="add_book.html">➕ Add book</a> </button>
-    <button><a href="edit_book.html">✍️ Edit book</a> </button> </span>
-        
+            
+        </div>
+        <p class="shadow">Showing 2 out of 2 Books</p>
+<p class="shadow"><strong>Books Available</strong></p>
+
+<table class="book-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>Category</th>
+    
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Clean Code</td>
+      <td>Robert Martin</td>
+      <td>Programming</td>
+      <td>Available</td>
+      <td>
+        <a  class="btn" href="edit_book.html?id=1" class="btn-edit">✍️ Edit</a>
+        <a style="margin-left: 20px;" class="btn" href="delete_book.html?id=1" class="btn-delete">🗑️ Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Atomic Habits</td>
+      <td>James Clear</td>
+      <td>Historical</td>
+      <td>Available</td>
+      <td>
+        <a class="btn" href="edit_book.html?id=2" class="btn-edit">✍️ Edit</a>
+        <a style="margin-left: 20px;" class="btn" href="delete_book.html?id=2" class="btn-delete">🗑️ Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+        <br>
+        <div><a class="btn" href="add_book.html">➕ Add book</a>
+            <a class="btn" href="edit_book.html">✍️ Edit book</a>  </div>
+            
+        </div>
     </body>
 
 </html>
