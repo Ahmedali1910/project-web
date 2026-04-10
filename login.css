@@ -1,0 +1,113 @@
+/* General Page Setup */
+body {
+  background-image: url("library.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* The Glass Container */
+.container {
+  width: 380px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  border-radius: 15px;
+  border: 1px solid rgba(200, 169, 106, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+}
+
+/* Navigation / Admin Button */
+nav {
+  margin-bottom: 25px;
+  text-align: right;
+}
+
+nav button {
+  background: transparent;
+  border: 1px solid #c8a96a;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* Form Styling */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #c8a96a;
+}
+
+input {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(200, 169, 106, 0.4);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #c8a96a;
+  box-shadow: 0 0 8px rgba(200, 169, 106, 0.5);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #c8a96a, #a07c3b);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Link Styling inside Buttons */
+button a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+p button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+}
+
+p button a {
+  color: #c8a96a;
+  text-decoration: underline;
+}
+.adminlogin{
+
+color: #c8a96a;
+
+
+}
