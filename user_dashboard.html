@@ -2,11 +2,7 @@
 <html>
 <head>
 <title>User Dashboard</title>
-<<<<<<< HEAD
 <link rel="stylesheet" href="user_dashboard_style.css">
-=======
-<link rel="stylesheet" href="style.css">
->>>>>>> ea7d2b03d0a334c6ded3ae4ca33d6f8e4b05ab08
 </head>
 
 <body>
@@ -19,70 +15,18 @@
 <button class="buttons"><a href="admin.html" > 👨🏻‍💼 Admin </a></button>
 </nav>
 
-<<<<<<< HEAD
-<hr>
-
-<h1>User Dashboard</h1>
-
-<h2>Search Books</h2>
-
-<input type="text" id="searchInput" placeholder="title, author, or category">
-
-<select id="filterType">
-<option value="title">Title</option>
-<option value="author">Author</option>
-<option value="category">Category</option>
-</select>
-
-<button onclick="desplay(searchBooks())">Search</button>
-
-<hr>
-
-<h2>Books</h2>
-
-<div id="books">
-
-<div class="book">
-    <img src="clean.png" alt="clean" title="clean code">
-<h3 class="title">Clean Code</h3>
-<p class="author">Author: Robert Martin</p>
-<p class="category">Category: Programming</p>
-<p>Status: Available</p>
-<button><a href="clean.html">👀 View Details</a> <button>🤝🏻 Borrow Book</button> </button>
-<hr>
-</div>
-
-<div class="book">
-    <img src="harry.png" alt="Harry" title="Haryy">
-<h3 class="title">Harry Potter</h3>
-<p class="author">Author: J.K Rowling</p>
-<p class="category">Category: Fantasy</p>
-<p>Status: Not Available</p>
-<button><a href="harry.html">👀 View Details</a> <button disabled>🤝🏻 Borrow Book</button> </button>
-<hr>
-</div>
-
-<div class="book">
-    <img src="atomic.png" alt="Atomic habits" title="Atomic habits">
-<h3 class="title">Atomic Habits</h3>
-<p class="author">Author: James Clear</p>
-<p class="category">Category: Self Development</p>
-<p>Status: Available</p>
-<button><a href="atomic.html">👀 View Details</a> <button>🤝🏻 Borrow Book</button> </button>
-<hr>
-<script src="Script.js" defer></script>
-=======
 <div class="usercontainer">
     <div class="topinfo">
         <h1 class="shadow">User Dashboard</h1>
         <h2 class="shadow">Search Books</h2>
         <div class="searchcontainer">
         <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search books by title, author, or category...">
-            <select class="categorydropdown">
-                <option>Category</option>
-                <option>Title</option>
-                <option>Author</option>
+        <input type="text" placeholder="Search books by title, author, or category..." id="searchInput">
+        <button onclick="desplay(searchBooks())">Search</button>
+            <select class="categorydropdown" id="filterType">
+                <option value="title">Title</option>
+                <option value="author">Category</option>
+                <option value="category">Author</option>
             </select>
         </div>
         
@@ -122,6 +66,6 @@
         </div>
     </div>
 </div>
->>>>>>> ea7d2b03d0a334c6ded3ae4ca33d6f8e4b05ab08
+<script src="Script.js" defer></script>
 </body>
 </html>
