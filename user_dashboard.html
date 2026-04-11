@@ -2,21 +2,24 @@
 <html>
 <head>
 <title>User Dashboard</title>
+<<<<<<< HEAD
 <link rel="stylesheet" href="user_dashboard_style.css">
+=======
+<link rel="stylesheet" href="style.css">
+>>>>>>> ea7d2b03d0a334c6ded3ae4ca33d6f8e4b05ab08
 </head>
 
 <body>
 
- <nav>
-<button><a href="home_user.html">🏠 Home</a></button>
-<button><a href="user_dashboard.html">📋 Dashboard</a></button> 
-<button><a href="borrowed_books.html">🤝🏻 Borrowed Books</a> </button>
-<p align = "right"><button><a href="login.html" > ➤ Logout</a></button>
-<button><a href="admin.html" > 👨🏻‍💼 Admin </a>
-</button>
-</p>
+<nav>
+<button class="buttons"><a href="home_user.html">🏠 Home</a></button>
+<button class="buttons"><a href="user_dashboard.html">📋 Dashboard</a></button> 
+<button class="buttons"><a href="borrowed_books.html">🤝🏻 Borrowed Books</a> </button>
+<button class="buttons"><a href="login.html" > ➤ Logout</a></button>
+<button class="buttons"><a href="admin.html" > 👨🏻‍💼 Admin </a></button>
 </nav>
 
+<<<<<<< HEAD
 <hr>
 
 <h1>User Dashboard</h1>
@@ -68,5 +71,57 @@
 <button><a href="atomic.html">👀 View Details</a> <button>🤝🏻 Borrow Book</button> </button>
 <hr>
 <script src="Script.js" defer></script>
+=======
+<div class="usercontainer">
+    <div class="topinfo">
+        <h1 class="shadow">User Dashboard</h1>
+        <h2 class="shadow">Search Books</h2>
+        <div class="searchcontainer">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search books by title, author, or category...">
+            <select class="categorydropdown">
+                <option>Category</option>
+                <option>Title</option>
+                <option>Author</option>
+            </select>
+        </div>
+        
+        
+        <h2 class="shadow">Books</h2>
+    </div>
+    
+<div id="books"> 
+    <div class="book1">
+        <a class="imghover" href="clean.html"> <img src="clean.png" alt="clean" title="clean code"></a>
+        <div class="bookinfo">
+            <h3 class="title">Clean Code</h3>
+            <p class="author">Author: Robert Martin</p>
+            <p class="category">Category: Programming</p>
+            <p>Status: Available</p>
+            <a class="btn" href="harry.html">👀 View Details</a> <a class="btn" href="borrowed_books.html">🤝🏻 Borrow Book</a>  
+        </div>
+    </div>
+    <div class="book2">
+        <a class="imghover" href="harry.html"><img src="harry.png" alt="Harry" title="Details"></a>
+        <div class="bookinfo">
+            <h3 class="title">Harry Potter</h3>
+            <p class="author">Author: J.K Rowling</p>
+            <p class="category">Category: Fantasy</p>
+            <p>Status: Not Available</p>
+            <a class="btn" href="harry.html">👀 View Details</a> <a onclick="alert('Book Cant Be Borrowed')" class="btn cantborrow" href="#">🤝🏻 Borrow Book</a>  
+        </div>
+    </div>
+    <div class="book3">
+        <a class="imghover" href="atomic.html"><img src="atomic.png" alt="Atomic habits" title="Atomic habits"></a>
+        <div class="bookinfo" >
+            <h3 class="title">Atomic Habits</h3>
+            <p class="author">Author: James Clear</p>
+            <p class="category">Category: Self Development</p>
+            <p>Status: Available</p>
+            <a class="btn" href="harry.html">👀 View Details</a> <a class="btn" href="borrowed_books.html">🤝🏻 Borrow Book</a>  
+        </div>
+    </div>
+</div>
+>>>>>>> ea7d2b03d0a334c6ded3ae4ca33d6f8e4b05ab08
 </body>
 </html>

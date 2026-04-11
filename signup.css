@@ -1,0 +1,139 @@
+/* --- Global & Container --- */
+body {
+  background-image: url("library.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  padding: 40px;
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(200, 169, 106, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: #c8a96a;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+/* --- Form Alignment --- */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c8a96a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 210px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 169, 106, 0.4);
+  border-radius: 6px;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+/* --- Modified Radio Group Styling --- */
+.radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Spacing between radio buttons and text */
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #c8a96a;
+}
+
+.radio-group label {
+  margin-right: 10px; /* Space after the "User type:" label */
+  color: #c8a96a;
+}
+
+.radio-group input[type="radio"] {
+  cursor: pointer;
+  accent-color: #c8a96a; /* Makes the radio circle gold */
+}
+
+/* --- Buttons & Links --- */
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.button-signup {
+  width: 100%;
+  background: linear-gradient(45deg, #c8a96a, #a07c3b);
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.button-signup a {
+  text-decoration: none; /* No line under link */
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+}
+
+
+
+.bt-login {
+  background: none;
+  border: 1px solid #c8a96a;
+  padding: 6px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.bt-login a {
+  text-decoration: none; /* No line under link */
+  color: #c8a96a;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 5px 15px rgba(200, 169, 106, 0.3);
+}
+p {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+p button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+}
+
+p button a {
+  color: #c8a96a;
+  text-decoration: underline;
+}
