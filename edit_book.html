@@ -27,21 +27,21 @@
   
     <p>Update Book Details</p> <br>
     <div class="container_edit" >
-  <span>Book ID <input type="text" placeholder="e.g B006"></span>  <br><br>
-  <span>Book Name <input type="text" placeholder="Enter book name"></span>  <br><br>
-  <span>Author <input type="text" placeholder="Enter author name"></span>  <br><br>
-  <span>Category  <select name="category" required>
+  <span>Book ID <input type="text" placeholder="e.g B006" id="id_edit"></span>  <br><br>
+  <span>Book Name <input type="text" placeholder="Enter book name" id="name_edit"></span>  <br><br>
+  <span>Author <input type="text" placeholder="Enter author name" id="author_edit"></span>  <br><br>
+  <span>Category  <select name="category" required id="category_edit">
         <option value="">Select Category</option>
         <option value="Programming">Programming</option>
         <option value="Science">Science</option>
         <option value="History">History</option>
         <option value="Literature">Literature</option>
     </select></span> <br><br>
-  <span>Descreption <textarea placeholder="Write a breif descreption"></textarea> </span><br><br>
-  <button type="submit" class="add_btn">Save changes 🗃️</button>
+  <span>Descreption <textarea placeholder="Write a breif descreption" id="descreption_edit"></textarea> </span><br><br>
+  <button type="submit" class="add_btn" onclick="editBook(document.getElementById('id_edit').value,document.getElementById('name_edit').value,document.getElementById('author_edit').value,document.getElementById('category_edit').value,document.getElementById('descreption_edit').value)">Save changes 🗃️</button>
 
 </div>
-   
+<script src="Script.js" defer></script>   
 
 </body>
 
